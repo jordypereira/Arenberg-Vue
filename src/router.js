@@ -5,6 +5,7 @@ import About from './views/About.vue'
 import Events from './views/Events.vue'
 import Event from './views/Event.vue'
 import Books from './views/Books.vue'
+import Book from './views/Book.vue'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/books',
       name: 'books',
       component: Books
+    },
+    {
+      path: '/book',
+      name: 'book',
+      component: Book
     }
   ],
   scrollBehavior(to, from, savedPosition) {

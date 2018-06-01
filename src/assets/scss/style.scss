@@ -386,6 +386,11 @@ header {
   }
 }
 
-.event-info {
+.max-width-350 {
   max-width: 350px;
+}
+
+.font-size-14,
+.font-size-14>* {
+  font-size: 1.4rem !important;
 }

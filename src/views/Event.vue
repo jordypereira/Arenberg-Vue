@@ -3,14 +3,10 @@
     <div class="container">
       <div class="text-primary">18 Juli 2017, 9PM</div>
       <h2 class="font-slabo underscore underscore-left mb-5">Event Title</h2>
-      <router-link to="/events">
-        <img src="/images/icons/arrow-left.png" alt="Arrow Left" class="icon mr-1"> back to the event overview
-      </router-link>
-      <div class="row mt-2 mb-5 justify-content-between">
-        <div class="col-lg-7 m-2">
-          <img src="/images/events/200100b034b453742afb5f09b1f5ca1f@2x.png" alt="" class="img-fluid">
-        </div>
-        <div class="col-lg-5 bg-light p-5 event-info m-auto">
+
+      <image-and-text-block image="/images/events/200100b034b453742afb5f09b1f5ca1f@2x.png" link="/events" linkText="back to the event overview">
+
+        <div class="col-lg-5 bg-light p-5 max-width-350 m-auto">
           <div class="text-primary pb-3">Featured Events</div>
           <p>Et harum quidem rerum
             <br>Et harum quidem rerum</p>
@@ -25,25 +21,11 @@
             <br>Book presentations
             <br>Archive</p>
         </div>
-      </div>
-      <div class="row mb-5">
-        <div class="col-10">
-          <p>Published |
-            <span class="text-primary">18 juli 2017</span>
-          </p>
-          <div class="row mb-4">
-            <div class="col-8">
-              <h4>Lorum ipsum dolor amet</h4>
-            </div>
-            <div class="col text-sm">
-              <img src="/images/icons/share-icon.png" alt="" class="icon mr-2"> Share this</div>
-          </div>
-          <p>
-            <b>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</b>
-          </p>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-        </div>
-      </div>
+
+      </image-and-text-block>
+
+      <project-info preDate="Published"></project-info>
+
       <div class="row event-teaser">
         <div class="col-lg-6">
           <img src="/images/events/cf7c96927728a16aa992aebc49667b03@2x.png" alt="" class="img-fluid">
@@ -85,11 +67,15 @@
 
 <script>
 import CarouselHalfWidth from '@/components/CarouselHalfWidth'
+import ProjectInfo from '@/components/ProjectInfo'
+import ImageAndTextBlock from '@/components/ImageAndTextBlock'
 
 export default {
   name: 'event',
   components: {
-    CarouselHalfWidth
+    CarouselHalfWidth,
+    ProjectInfo,
+    ImageAndTextBlock
   }
 }
 </script>
