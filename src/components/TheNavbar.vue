@@ -1,10 +1,10 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light justify-content-lg-center">
+    <router-link class="navbar-brand navbar-brand-sm d-lg-none" to="/">
+      <img src="/images/Path 692@2x.png" width="30" height="auto" class="d-inline-block mr-3" alt="Arenberg Foundation logo"> Arenberg Foundation</router-link>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <router-link class="navbar-brand navbar-brand-sm d-lg-none" to="/">
-      <img src="/images/Path 692@2x.png" width="30" height="auto" class="d-inline-block mr-3" alt="Arenberg Foundation logo"> Arenberg Foundation</router-link>
     <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent">
       <div class="container">
         <ul class="nav nav-lang justify-content-center justify-content-lg-end">
