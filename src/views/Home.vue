@@ -71,7 +71,7 @@
 import CarouselFullWidth from '@/components/CarouselFullWidth'
 import NewsTile from '@/components/NewsTile'
 import EventBlock from '@/components/Events/EventBlock'
-import CardBasic from '@/components/CardBasic'
+import CardBasic from '@/components/Cards/CardBasic'
 
 export default {
   name: 'home',
