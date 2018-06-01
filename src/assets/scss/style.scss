@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+.navbar-light .navbar-brand {
+  color: $primary;
+}
+
+.content-block {
+  padding: 58px 0px;
+}
+
+h2 {
+  line-height: 60px;
+  margin-bottom: 15px;
+}
+
+//Fonts
+.font-slabo {
+  font-family: 'Slabo 27px';
+}
+
+.text-sm {
+  font-size: 0.8rem;
+}
+
+//Underscore
+.underscore {
+  position: relative;
+  &::after {
+    content: '';
+    background: $primary;
+    position: absolute;
+    left: calc(50% - 32px);
+    bottom: -10px;
+    width: 64px;
+    height: 2px;
+  }
+}
+
+.underscore-left {
+  &::after {
+    left: 0;
+  }
+}
+
+.underscore-sm {
+  &::after {
+    width: 25px;
+  }
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+p {
+  font-family: Open Sans;
+  font-size: 0.8rem;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.sort-arrow {
+  fill: $primary;
+}
+
+.lead {
+  font-family: $font-family-base;
+}
+
+//Quotes
+.blockquote {
+  font-weight: 700;
+  font-style: italic;
+  &::before {
+    content: '\201C';
+  }
+  &::after {
+    content: '\201D';
+  }
+}
+
+.card-basic {
+  min-width: 350px;
+  background-color: $light;
+  border: 20px solid #fff;
+  .card-title {
+    font-weight: 700;
+  }
+  .card-info {
+    @extend .text-primary;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  hr {
+    border-top: $hr-border-width solid #000;
+  }
+}
+
+.card-person {
+  border: none;
+  .card-title {
+    font-weight: 600;
+  }
+  .card-subtitle {
+    font-family: Open Sans;
+  }
+  hr {
+    border-top: 1px solid $primary;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+//Buttons
+.btn {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn-lg {
+  font-weight: 300;
+}
+
+//Nav
+.navbar {
+  .navbar-brand {
+    @include hover-focus {
+      color: #000;
+    }
+  }
+  .navbar-brand-sm {
+    font-size: 1.25rem;
+  }
+  .navbar-nav {
+    .nav-link {
+      font-size: 1.1rem;
+      margin: inherit 20px;
+      @include hover-focus {
+        background-color: $primary;
+      }
+    }
+    .show>.nav-link,
+    .active>.nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      background-color: $primary;
+    }
+  }
+  .show,
+  .collapsing {
+    .navbar-nav {
+      .nav-items {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}
+
+//Nav-link
+.nav-lang {
+  font-family: Open Sans;
+  font-size: 0.8rem;
+  .active {
+    color: $primary;
+  }
+  >* {
+    margin: 0 8px;
+    color: $gray;
+    &:active,
+    &:hover {
+      cursor: pointer;
+      color: $primary;
+    }
+  }
+}
+
+//Sub Nav
+.nav-secondary {
+  background-color: $light;
+  .nav-item {
+    .nav-link {
+      color: $black;
+      padding: 1.8rem 3rem;
+      font-size: 1.1rem;
+      &:hover {
+        color: $light;
+        background-color: $primary;
+      }
+    }
+    .active {
+      color: $light;
+      background-color: $primary;
+    }
+  }
+}
+
+//Header Image
+header {
+  img {
+    max-height: 500px;
+    height: auto;
+    width: 100%;
+  }
+}
+
+//Pagination
+.page-item {
+  &:first-child {
+    .page-link {
+      border-radius: 0;
+    }
+  }
+  &:last-child {
+    .page-link {
+      border-radius: 0;
+    }
+  }
+  .page-link {
+    margin-left: 2px;
+    font-family: Open Sans;
+  }
+}
+
+//Carousel
+.carousel {
+  .carousel-inner {
+    max-height: 65vh;
+    .carousel-item {
+      max-height: inherit;
+      .carousel-caption {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        bottom: 20%;
+        .display-2 {
+          font-size: 1.5rem;
+        }
+        .lead {
+          max-width: 80%;
+          margin: 0 auto;
+          font-size: 0.8rem;
+        }
+        @media all and (min-width: 720px) {}
+        @media all and (min-width: 1080px) {
+          .display-2 {
+            font-size: 6rem;
+          }
+          .lead {
+            max-width: 60%;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  .carousel-indicators-rounded {
+    left: initial;
+    right: 20px;
+    bottom: 25%;
+    z-index: 15;
+    flex-direction: column;
+    margin-bottom: 0;
+    @media all and (min-width: 720px) {
+      right: 92px;
+      bottom: 50%;
+    }
+    li {
+      border-radius: 50%;
+      margin: $carousel-indicator-spacer 0;
+      background-color: rgba($carousel-indicator-active-bg, 1);
+    }
+  }
+  .active {
+    &:after {
+      position: absolute;
+      width: $carousel-indicator-width;
+      height: $carousel-indicator-height;
+      border: $carousel-indicator-active-border-width solid rgba($carousel-indicator-active-bg, 0.5);
+      border-radius: 50%;
+      padding: $carousel-indicator-active-padding;
+      right: 0;
+      left: -($carousel-indicator-active-padding/2 + $carousel-indicator-width / 4);
+      top: -($carousel-indicator-active-padding/2 + $carousel-indicator-height / 4);
+      bottom: 0;
+    }
+  } // Icons for within
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    min-width: 20px;
+    min-height: 40px;
+    background-size: 100% 100%;
+  }
+}
+
+.carousel-sm {
+  .carousel-inner {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+//Events
+.events {
+  .event {
+    position: relative;
+    max-width: 440px;
+    padding: 0;
+    img {
+      transition: all 1s;
+      filter: opacity(30%);
+      width: auto;
+    }
+    .event-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 1s;
+      .event-text {
+        max-width: 70%;
+        p {
+          font-size: 15px;
+          text-align: center;
+        }
+        .date {
+          font-size: 40px;
+          color: $primary;
+          font-weight: 700;
+          padding-bottom: 55px;
+        }
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      .event-text {
+        filter: opacity(0);
+      }
+      img {
+        filter: opacity(100%);
+      }
+    }
+  }
+}
+
+#events {
+  .filters {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    a {
+      color: $black;
+      font-family: Open Sans;
+      margin: 0 15px;
+      &:not(:first-child) {
+        padding-top: 10px;
+      }
+      &:hover,
+      &:active {
+        color: $primary;
+        text-decoration: none;
+        border-bottom: 1px solid #000;
+      }
+    }
+  }
+  @media screen and (min-width: 720px) {
+    .filters {
+      flex-flow: row wrap;
+      a {
+        &:not(:first-child) {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
+.event-info {
+  max-width: 350px;
+}

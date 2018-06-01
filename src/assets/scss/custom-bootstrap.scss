@@ -1,0 +1,65 @@
+$primary: #be2832;
+$secondary: #335467;
+$gray: #c3b5b5;
+$light: #f8f8fa;
+$black: #000;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base;
+$h1-font-size: 30px;
+$h2-font-size: 2.5rem;
+// $lead-font-size: 45px;
+// $display1-size: 135px;
+$font-family-base: Georgia,
+'Times New Roman',
+Times,
+serif;
+// $font-size-sm: ($font-size-base * 0.875);
+//Nav
+$navbar-light-color: rgba($black, 1);
+$navbar-light-hover-color: rgba($light, 1);
+$navbar-light-active-color: rgba($light, 1);
+$nav-link-padding-y: 0.3rem;
+$navbar-nav-link-padding-x: 1rem;
+$navbar-brand-font-size: 2rem;
+//Buttons
+$btn-border-radius: 0px;
+$btn-border-radius-sm: 0px;
+$btn-border-radius-lg: 0px;
+$btn-padding-y-sm: 10px;
+$btn-padding-x-sm: 18px;
+$btn-font-weight: 600;
+$input-btn-padding-y-lg: 0.5rem;
+$input-btn-padding-x-lg: 2rem;
+//Pagination
+$pagination-padding-y: 0.8rem;
+$pagination-padding-x: 1rem;
+$pagination-line-height: 1;
+$pagination-color: $primary;
+$pagination-bg: $light;
+$pagination-border-color: $primary;
+$pagination-hover-color: $light;
+$pagination-hover-bg: $primary;
+$pagination-hover-border-color: $primary;
+$pagination-active-color: $light;
+$pagination-active-bg: $primary;
+$pagination-active-border-color: $primary;
+//Forms
+$input-border-width: 0;
+$input-placeholder-color: $secondary;
+// Carousel
+// $carousel-control-color: $white !default;
+$carousel-control-width: 0;
+// $carousel-control-opacity: 0.5 !default;
+$carousel-indicator-width: 8px;
+$carousel-indicator-height: 8px;
+$carousel-indicator-spacer: 8px;
+$carousel-indicator-active-bg: $black;
+$carousel-indicator-active-padding: 10px;
+$carousel-indicator-active-border-width: 1px;
+$carousel-control-prev-icon-bg: url('/images/icons/arrow-left-thin.png');
+$carousel-control-next-icon-bg: url('/images/icons/arrow-right-thin.png');
+$carousel-caption-width: 50%;
+$carousel-caption-color: $black;
+$carousel-transition: transform 0.6s ease !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+//Quotes
+$blockquote-font-size: $font-size-base * 1.5;
