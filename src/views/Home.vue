@@ -38,10 +38,10 @@
       <div class="container d-flex flex-column align-items-center">
         <h2 class="text-center underscore">Books</h2>
         <div class="row justify-content-center pt-2 py-5">
-          <div class="col-lg-5 pr-5">
+          <div class="col-lg-5 pr-lg-5">
             <img src="/images/Path 690@2x.png" alt="Book" class="img-fluid">
           </div>
-          <div class="col-lg-5 py-2 pl-5">
+          <div class="col-lg-5 py-2 pl-lg-5">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
