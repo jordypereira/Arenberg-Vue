@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 .navbar-light .navbar-brand {
   color: $primary;
 }
@@ -52,8 +53,9 @@ h3 {
   font-weight: 700;
 }
 
-p {
-  font-family: Open Sans;
+p,
+a {
+  font-family: 'Open Sans';
   font-size: 0.9rem;
 }
 
@@ -73,7 +75,7 @@ p {
 //Input
 .input-lg {
   border-bottom: 1px solid #000;
-  font-family: Open Sans, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   border-radius: 0;
   @media screen and (min-width: 720px) {
     font-size: 1.5rem;
@@ -115,7 +117,7 @@ p {
     font-weight: 600;
   }
   .card-subtitle {
-    font-family: Open Sans;
+    font-family: 'Open Sans';
   }
   hr {
     border-top: 1px solid $primary;
@@ -152,8 +154,8 @@ p {
         background-color: $primary;
       }
     }
-    .show>.nav-link,
-    .active>.nav-link,
+    .show > .nav-link,
+    .active > .nav-link,
     .nav-link.show,
     .nav-link.active {
       background-color: $primary;
@@ -172,12 +174,12 @@ p {
 
 //Nav-link
 .nav-lang {
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-size: 0.8rem;
   .active {
     color: $primary;
   }
-  >* {
+  > * {
     margin: 0 8px;
     color: $gray;
     &:active,
@@ -231,7 +233,7 @@ header {
   }
   .page-link {
     margin-left: 2px;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
   }
 }
 
@@ -316,12 +318,15 @@ header {
       position: absolute;
       width: $carousel-indicator-width;
       height: $carousel-indicator-height;
-      border: $carousel-indicator-active-border-width solid rgba($carousel-indicator-active-bg, 0.5);
+      border: $carousel-indicator-active-border-width solid
+        rgba($carousel-indicator-active-bg, 0.5);
       border-radius: 50%;
       padding: $carousel-indicator-active-padding;
       right: 0;
-      left: -($carousel-indicator-active-padding/2 + $carousel-indicator-width / 4);
-      top: -($carousel-indicator-active-padding/2 + $carousel-indicator-height / 4);
+      left: -($carousel-indicator-active-padding/2 + $carousel-indicator-width /
+            4);
+      top: -($carousel-indicator-active-padding/2 + $carousel-indicator-height /
+            4);
       bottom: 0;
     }
   } // Icons for within
@@ -366,6 +371,7 @@ header {
         }
         .date {
           font-size: 40px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
           color: $primary;
           font-weight: 700;
           padding-bottom: 55px;
@@ -391,7 +397,7 @@ header {
     align-items: center;
     a {
       color: $black;
-      font-family: Open Sans;
+      font-family: 'Open Sans';
       margin: 0 15px;
       &:not(:first-child) {
         padding-top: 10px;
@@ -421,6 +427,6 @@ header {
 }
 
 .font-size-14,
-.font-size-14>* {
+.font-size-14 > * {
   font-size: 1.4rem !important;
 }
