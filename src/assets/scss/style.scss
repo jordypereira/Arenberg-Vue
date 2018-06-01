@@ -75,7 +75,9 @@ p {
   border-bottom: 1px solid #000;
   font-family: Open Sans, sans-serif;
   border-radius: 0;
-  font-size: 1.5rem;
+  @media screen and (min-width: 720px) {
+    font-size: 1.5rem;
+  }
 }
 
 //Quotes
@@ -242,23 +244,51 @@ header {
       .carousel-caption {
         padding-top: 20px;
         padding-bottom: 20px;
-        bottom: 20%;
+        bottom: 5%;
         .display-2 {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
         }
         .lead {
           max-width: 80%;
           margin: 0 auto;
-          font-size: 0.8rem;
+          font-size: 0.6rem;
         }
-        @media all and (min-width: 720px) {}
+        @media all and (min-width: 320px) {
+          bottom: 10%;
+          .display-2 {
+            font-size: 1.5rem;
+          }
+        }
+        @media all and (min-width: 480px) {
+          bottom: 20%;
+          .display-2 {
+            font-size: 2rem;
+          }
+          .lead {
+            font-size: 1rem;
+          }
+        }
+        @media all and (min-width: 720px) {
+          bottom: 30%;
+          .display-2 {
+            font-size: 3rem;
+          }
+          .lead {
+            font-size: 1rem;
+          }
+        }
         @media all and (min-width: 1080px) {
           .display-2 {
-            font-size: 6rem;
+            font-size: 5rem;
           }
           .lead {
             max-width: 60%;
             font-size: 1.2rem;
+          }
+        }
+        @media all and (min-width: 1280px) {
+          .display-2 {
+            font-size: 6rem;
           }
         }
       }

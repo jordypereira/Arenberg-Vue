@@ -4,7 +4,7 @@
     <div class="container">
       <h2 class="text-center underscore mb-5">Featured</h2>
       <div class="row">
-        <div v-for="(book, i) in featuredBooks" :key="i" class="col-4">
+        <div v-for="(book, i) in featuredBooks" :key="i" class="col-lg-4">
           <card-img-top :image="book.image" :text="book.text" :link="book.link"></card-img-top>
         </div>
       </div>
@@ -17,10 +17,10 @@
     <div class="container">
       <h2 class="text-center underscore mb-5">Search books</h2>
       <form class="form-row justify-content-between">
-        <div class="form-group col-9">
+        <div class="form-group col-lg-9">
           <input type="text" placeholder="Search by Publisher, ISBN code" class="form-control input-lg">
         </div>
-        <div class="col-2">
+        <div class="col-lg-2">
           <button class="btn btn-primary btn-lg">Search</button>
         </div>
       </form>

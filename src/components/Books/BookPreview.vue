@@ -2,10 +2,10 @@
   <div class="book-preview py-5">
     <div class="container">
       <div class="row" :class="{'flex-row-reverse': reverse}">
-        <div class="col-lg-6 pr-5">
+        <router-link to="/book" class="col-lg-6 pr-lg-5">
           <img class="img-fluid" :src="image" alt="">
-        </div>
-        <div class="col-lg-6 px-5 d-flex flex-column justify-content-center">
+        </router-link>
+        <div class="col-lg-6 px-lg-5 d-flex flex-column justify-content-center">
           <h4>Title, subtitle | Author</h4>
           <p class="text-primary">Publisher, release date, number of pages, ISBN code</p>
           <p>

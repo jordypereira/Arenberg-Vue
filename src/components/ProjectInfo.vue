@@ -1,11 +1,11 @@
 <template>
   <div class="row mb-5">
-    <div class="col-10">
+    <div class="col-lg-10">
       <p>{{ preDate }} |
         <span class="text-primary">18 juli 2017</span>
       </p>
       <div class="row mb-4">
-        <div class="col-8">
+        <div class="col-lg-8">
           <h4>Lorum ipsum dolor amet</h4>
         </div>
         <div class="col text-sm">

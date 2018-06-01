@@ -24,7 +24,7 @@
 
       <h2 class="text-center underscore">Related items</h2>
       <div class="row">
-        <div v-for="(book, i) in featuredBooks" :key="i" class="col-4">
+        <div v-for="(book, i) in featuredBooks" :key="i" class="col-lg-4">
           <card-img-top :image="book.image" :text="book.text" :link="book.link"></card-img-top>
         </div>
       </div>

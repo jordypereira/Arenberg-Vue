@@ -1,6 +1,8 @@
 <template>
   <div class="home">
+
     <CarouselFullWidth></CarouselFullWidth>
+
     <div id="actueel" class="content-block">
       <div class="container d-flex flex-column align-items-center">
         <h2 class="text-center underscore">Actueel</h2>
@@ -44,10 +46,10 @@
             </p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <a href="">read more ></a>
+            <router-link to="/book">read more ></router-link>
           </div>
         </div>
-        <a href="./events" class="btn btn-sm btn-outline-primary" role="button">Visit the books page</a>
+        <router-link to="/books" class="btn btn-sm btn-outline-primary" role="button">Visit the books page</router-link>
       </div>
     </div>
 

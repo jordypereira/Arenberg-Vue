@@ -5,7 +5,7 @@
         <div class="col-lg-6 pr-5">
           <img class="img-fluid" :src="image" alt="">
         </div>
-        <div class="col-lg-6 px-5 d-flex flex-column justify-content-center">
+        <div class="col-lg-6 px-lg-5 d-flex flex-column justify-content-center">
           <p>Published |
             <span class="text-primary">{{ date }}</span>
           </p>
