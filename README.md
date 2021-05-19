@@ -1,5 +1,5 @@
 # Arenberg-Vue
-> 1 Jun 2018
+> 1 June 2018
 > 
 Local install:
 - git clone 
